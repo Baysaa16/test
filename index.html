@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaza | Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Баясгалан</div>
+    <ul class="nav-links">
+      <li><a href="#about">Танилцуулга</a></li>
+      <li><a href="#skills">Чадварууд</a></li>
+      <li><a href="#projects">Төслүүд</a></li>
+      <li><a href="#contact">Холбоо</a></li>
+      <li><button id="toggle-dark">🌙</button></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <img src="profile.avif" alt="Zaza профайл зураг" class="profile-img" />
+    <h1>Баясгалан</h1>
+    <p>Оюутан</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>Танилцуулга</h2>
+    <p>Би одоогоор ИЗОУС-ын КПХ 3-р курсын оюутан</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Чадварууд</h2>
+    <ul>
+      <li>HTML, CSS</li>
+      <li>React, Node.js, Express</li>
+      <li>MongoDB, Firebase</li>
+      <li>Figma, Adobe XD</li>
+      <li>Responsive Design, Git</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Төслүүд</h2>
+    <div class="project">
+      <h3>MyProfile Website</h3>
+      <p>HTML, CSS, JavaScript ашиглан бүтээсэн хувийн веб CV сайт.</p>
+    </div>
+ 
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Холбоо барих</h2>
+    <p>Email: unenbatbaysgalan16@gmail.com</p>
+    <p>Phone: +976 94806566</p>
+    <p>GitHub: <a href="https://github.com/Baysaa16">Baysgalan Github</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Баясгалан. Бүх эрх хуулиар хамгаалагдсан.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('toggle-dark');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
